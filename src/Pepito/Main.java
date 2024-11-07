@@ -10,8 +10,9 @@ public class Main {
             System.out.println("\tVIOLATION TRACKER");
             System.out.println("---1. Student List");
             System.out.println("---2. Violation");
-            System.out.println("---3. Report");
-            System.out.println("---4. Exit");
+            System.out.println("---3. Student Violation");
+            System.out.println("---4. Report");
+            System.out.println("---5. Exit");
             System.out.print("Enter Choice: ");
             int choice;
             while(true){
@@ -37,6 +38,10 @@ public class Main {
                     v.violation();
                 break;
                 case 3:
+                    Student_Violation st = new Student_Violation();
+                    st.violation();
+                break;
+                case 4:
                     Record r = new Record();
                     r.record();
                 break;
